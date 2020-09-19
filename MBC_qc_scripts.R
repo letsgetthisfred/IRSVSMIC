@@ -1,6 +1,7 @@
 #Qual Check MBCs
-#want a stim to unstim ratio of >=4 (taken from Falkard 2019), and KLH =<3
+#want a stim to unstim ratio of >=3 (Falkard 2019=4, we're using 3), and KLH =<3
 
+#experiment with a data frame with SID set to key?
 
 check_ratio<-function(stim, unstim, ratio_threshold=4, KLH_threshold=3){ #this feels inelegant,but perhaps serviceable. would have to do x3 unless can create matrix where "pass" values added by index
         pass<-data.frame(SID="",Total_Stim="", Total_Unstim="", KLH="")
